@@ -10,10 +10,13 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
+    
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var areaLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
+    
+    //whenever you create a ew custom cell you have to give it a filename and identifier
     
     override func awakeFromNib() {
         super.awakeFromNib()

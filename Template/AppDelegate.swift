@@ -2,12 +2,13 @@
 //  AppDelegate.swift
 //  Template
 //
-//  Created by Sierra Kaplan-Nelson on 4/3/17.
+//  Created by Rebecca Matthews on 4/3/17.
 //  Copyright © 2017 StreetCode. All rights reserved.
 //
 
 import UIKit
 import Firebase
+import FirebaseAuthUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -43,6 +44,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 	}
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?
+        if FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false {
+            
+            return true
+        }
+        
+        return false
+    }
 
 }
 
