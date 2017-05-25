@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R25-jI-RE0" id="BDk-zk-Q6d">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -121,7 +121,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Npf-mP-bFF" kind="relationship" relationship="viewControllers" id="6ix-Dm-EEK"/>
-                        <segue destination="A99-Kk-d2y" kind="relationship" relationship="viewControllers" id="1e8-5f-jIM"/>
+                        <segue destination="CTy-F0-3WU" kind="relationship" relationship="viewControllers" id="1e8-5f-jIM"/>
                         <segue destination="RtQ-Fe-N0A" kind="relationship" relationship="viewControllers" id="dyV-cM-CQw"/>
                         <segue destination="ZtS-63-YAt" kind="relationship" relationship="viewControllers" id="ryJ-9I-CHP"/>
                         <segue destination="7OT-3e-TdY" kind="relationship" relationship="viewControllers" id="Bww-OG-YnP"/>
@@ -144,7 +144,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="308"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eYw-ct-3J2" id="iUO-HO-dE1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="308"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="307.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Back to School Program-B2B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="my5-kB-2eh">
@@ -198,10 +198,6 @@
                                             <color key="backgroundColor" red="1" green="0.83557343839999998" blue="0.28623983850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal" title="Where"/>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6wK-Va-EpS">
-                                            <rect key="frame" x="3" y="60" width="194" height="243"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHl-uY-KNB">
                                             <rect key="frame" x="200" y="269" width="175" height="36"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -215,6 +211,10 @@
                                             <color key="backgroundColor" red="1" green="0.83557343839999998" blue="0.28623983850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal" title="When"/>
                                         </button>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Davis 2" translatesAutoresizingMaskIntoConstraints="NO" id="6wK-Va-EpS">
+                                            <rect key="frame" x="0.0" y="62" width="194" height="243"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -234,23 +234,36 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OHY-tk-tGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-463" y="581"/>
+            <point key="canvasLocation" x="476" y="580.65967016491754"/>
         </scene>
         <!--BLOG-->
         <scene sceneID="1wC-2e-RZH">
             <objects>
                 <tableViewController id="A99-Kk-d2y" userLabel="BLOG" customClass="BlogTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="242" sectionHeaderHeight="28" sectionFooterHeight="28" id="kZE-G4-g35">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="291" sectionHeaderHeight="28" sectionFooterHeight="28" id="kZE-G4-g35">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlogCell" rowHeight="242" id="yFc-fA-IXA" userLabel="BlogCell">
-                                <rect key="frame" x="0.0" y="28" width="375" height="242"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlogCell" rowHeight="291" id="yFc-fA-IXA" userLabel="BlogCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="291"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yFc-fA-IXA" id="Umi-Xd-I8f">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="242"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="290.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="STREETCODE Class" translatesAutoresizingMaskIntoConstraints="NO" id="XYO-an-4hR">
+                                            <rect key="frame" x="0.0" y="8" width="375" height="205"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STREETCODE CLASS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5V-Kl-XJk">
+                                            <rect key="frame" x="8" y="221" width="359" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                            <nil key="textColor"/>
+                                            <color key="highlightedColor" red="0.35707083502678838" green="0.26500947293037636" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -259,11 +272,50 @@
                             <outlet property="delegate" destination="A99-Kk-d2y" id="DZH-ha-AdV"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="BLOG" id="rzk-My-5aC" userLabel="BLOG"/>
+                    <navigationItem key="navigationItem" id="Ch9-OQ-RQ5"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgJ-yk-5l1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1956" y="581"/>
+            <point key="canvasLocation" x="-1016.8" y="580.65967016491754"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jzW-QW-KBv">
+            <objects>
+                <viewController storyboardIdentifier="blogPost" id="049-91-VWz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oOb-8c-POB"/>
+                        <viewControllerLayoutGuide type="bottom" id="guK-m4-H0h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cw5-1a-XP3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="STREETCODE Class" translatesAutoresizingMaskIntoConstraints="NO" id="hlj-Fg-j3f">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STREETCODE CLASS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="672-5H-Xco">
+                                <rect key="frame" x="7" y="201" width="359" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.35707083499999998" green="0.26500947289999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lnm-9s-bxw">
+                                <rect key="frame" x="7" y="269" width="359" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legumLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZD-YV-h49" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1956" y="1260.7196401799101"/>
         </scene>
         <!--PROGRAMS-->
         <scene sceneID="QMg-Hx-oNp">
@@ -278,7 +330,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="262"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pCm-ny-1YB" id="KQK-Rx-DRq">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="261.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="LCCDC Logo copy" translatesAutoresizingMaskIntoConstraints="NO" id="NVz-Uz-ySR">
@@ -312,7 +364,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZJ-t8-hE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="581"/>
+            <point key="canvasLocation" x="1328.8" y="580.65967016491754"/>
         </scene>
         <!--DONORS-->
         <scene sceneID="sGV-pR-X2p">
@@ -353,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZbV-uP-lD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="460.11994002998506"/>
+            <point key="canvasLocation" x="2015.2" y="460.11994002998506"/>
         </scene>
         <!--Map View-->
         <scene sceneID="zyU-p4-qck">
@@ -390,16 +442,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B58-Ds-mEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1225" y="581"/>
+            <point key="canvasLocation" x="-287.19999999999999" y="580.65967016491754"/>
+        </scene>
+        <!--BLOG-->
+        <scene sceneID="zEN-tT-lYG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CTy-F0-3WU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="BLOG" id="rzk-My-5aC" userLabel="BLOG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nPe-hv-vk9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A99-Kk-d2y" kind="relationship" relationship="rootViewController" id="Ivz-5L-97T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXX-K0-L6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1956" y="580.65967016491754"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Davis 2" width="5312" height="2988"/>
         <image name="HomeIcon" width="50" height="50"/>
         <image name="LCCDC Logo copy" width="1200" height="833"/>
         <image name="LCCDC Logo sm" width="150" height="150"/>
         <image name="MapIcon" width="25" height="25"/>
         <image name="MyLocationIcon" width="60" height="60"/>
         <image name="ProfileIcon" width="50" height="50"/>
+        <image name="STREETCODE Class" width="4032" height="3024"/>
         <image name="heart" width="49" height="46"/>
         <image name="iphone background2" width="596" height="1072"/>
     </resources>

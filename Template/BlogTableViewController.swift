@@ -48,6 +48,12 @@ class BlogTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "blogPost")
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.

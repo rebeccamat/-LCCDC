@@ -16,7 +16,6 @@
 		9618C1A51E9F24AC0088A9BB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9618C1A41E9F24AC0088A9BB /* SWRevealViewController.m */; };
 		963193E71EC40326002F954E /* FirstPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963193E61EC40326002F954E /* FirstPageTableViewController.swift */; };
 		963193E91EC40436002F954E /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963193E81EC40436002F954E /* FirstPageViewController.swift */; };
-		963193EE1ECE3A1E002F954E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963193ED1ECE3A1E002F954E /* Images.xcassets */; };
 		963193F21ECE3E17002F954E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963193F11ECE3E17002F954E /* LaunchScreen.storyboard */; };
 		963193F41ECE4131002F954E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963193F31ECE4131002F954E /* Assets.xcassets */; };
 		96594F1B1EB8263B0058D354 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F1A1EB8263B0058D354 /* CustomTabBarController.swift */; };
@@ -42,7 +41,6 @@
 		9618C1A41E9F24AC0088A9BB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		963193E61EC40326002F954E /* FirstPageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageTableViewController.swift; sourceTree = "<group>"; };
 		963193E81EC40436002F954E /* FirstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
-		963193ED1ECE3A1E002F954E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		963193F11ECE3E17002F954E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		963193F31ECE4131002F954E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96594F1A1EB8263B0058D354 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 				963193F11ECE3E17002F954E /* LaunchScreen.storyboard */,
 				A56203DF1E933FEA00122BDB /* Info.plist */,
 				9618C1A21E9F24AB0088A9BB /* Template-Bridging-Header.h */,
-				963193ED1ECE3A1E002F954E /* Images.xcassets */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -198,7 +195,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963193EE1ECE3A1E002F954E /* Images.xcassets in Resources */,
 				963193F21ECE3E17002F954E /* LaunchScreen.storyboard in Resources */,
 				96161BF61ED3E12500C5A9D7 /* GoogleService-Info.plist in Resources */,
 				963193F41ECE4131002F954E /* Assets.xcassets in Resources */,
