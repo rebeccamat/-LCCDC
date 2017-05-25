@@ -239,13 +239,13 @@
         <!--BLOG-->
         <scene sceneID="1wC-2e-RZH">
             <objects>
-                <tableViewController id="A99-Kk-d2y" userLabel="BLOG" customClass="BlogTableViewController" sceneMemberID="viewController">
+                <tableViewController id="A99-Kk-d2y" userLabel="BLOG" customClass="BlogTableViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="291" sectionHeaderHeight="28" sectionFooterHeight="28" id="kZE-G4-g35">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlogCell" rowHeight="291" id="yFc-fA-IXA" userLabel="BlogCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlogCell" rowHeight="291" id="yFc-fA-IXA" userLabel="BlogCell" customClass="BlogTableViewCell" customModule="Template" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="291"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yFc-fA-IXA" id="Umi-Xd-I8f">
@@ -265,6 +265,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleImage" destination="XYO-an-4hR" id="Dxg-x4-UPi"/>
+                                    <outlet property="titleLabel" destination="w5V-Kl-XJk" id="XPZ-JL-Uzh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

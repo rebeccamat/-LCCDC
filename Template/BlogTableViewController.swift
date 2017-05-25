@@ -40,7 +40,13 @@ class BlogTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BlogCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BlogCell", for: indexPath) as! BlogTableViewCell
+        if indexPath.row == 1 {
+            cell.titleImage.image=UIImage(named:"Theresa 2")
+            cell.titleLabel.text="Feeding the Hungry"
+            
+        }
+        
 
         // Configure the cell...
         
