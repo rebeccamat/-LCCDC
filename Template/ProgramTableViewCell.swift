@@ -1,5 +1,5 @@
 //
-//  CustomTableViewCell.swift
+//  ProgramTableViewCell.swift
 //  Template
 //
 //  Created by Mateo Garcia on 4/4/17.
@@ -8,12 +8,10 @@
 
 import UIKit
 
-class CustomTableViewCell: UITableViewCell {
+class ProgramTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var photoImageView: UIImageView!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var areaLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
     //whenever you create a ew custom cell you have to give it a filename and identifier

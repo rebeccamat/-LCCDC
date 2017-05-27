@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		256DD3D11E93A82300DC5D31 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D01E93A82300DC5D31 /* CustomTableViewCell.swift */; };
-		256DD3D31E93A84100DC5D31 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D21E93A84100DC5D31 /* CustomTableViewController.swift */; };
+		256DD3D11E93A82300DC5D31 /* ProgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D01E93A82300DC5D31 /* ProgramTableViewCell.swift */; };
+		256DD3D31E93A84100DC5D31 /* ProgramTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D21E93A84100DC5D31 /* ProgramTableViewController.swift */; };
 		256DD3D51E93A89200DC5D31 /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D41E93A89200DC5D31 /* CustomCollectionViewController.swift */; };
 		256DD3D71E93A97C00DC5D31 /* CustomMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D61E93A97C00DC5D31 /* CustomMapViewController.swift */; };
 		256DD3D91E93AD1800DC5D31 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D81E93AD1800DC5D31 /* CustomCollectionViewCell.swift */; };
@@ -32,8 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		256DD3D01E93A82300DC5D31 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		256DD3D21E93A84100DC5D31 /* CustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		256DD3D01E93A82300DC5D31 /* ProgramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramTableViewCell.swift; sourceTree = "<group>"; };
+		256DD3D21E93A84100DC5D31 /* ProgramTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramTableViewController.swift; sourceTree = "<group>"; };
 		256DD3D41E93A89200DC5D31 /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
 		256DD3D61E93A97C00DC5D31 /* CustomMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapViewController.swift; sourceTree = "<group>"; };
 		256DD3D81E93AD1800DC5D31 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -124,15 +124,15 @@
 				96CDBABE1ED684EB00A571DA /* BlogTableViewCell.swift */,
 				96594F221EBAC8580058D354 /* EventsTableViewCell.swift */,
 				96594F1C1EBAC0D80058D354 /* EventsTableViewController.swift */,
-				256DD3D41E93A89200DC5D31 /* CustomCollectionViewController.swift */,
-				256DD3D81E93AD1800DC5D31 /* CustomCollectionViewCell.swift */,
-				256DD3D21E93A84100DC5D31 /* CustomTableViewController.swift */,
-				256DD3D01E93A82300DC5D31 /* CustomTableViewCell.swift */,
+				256DD3D21E93A84100DC5D31 /* ProgramTableViewController.swift */,
+				256DD3D01E93A82300DC5D31 /* ProgramTableViewCell.swift */,
 				9618C1A31E9F24AC0088A9BB /* SWRevealViewController.h */,
 				9618C1A41E9F24AC0088A9BB /* SWRevealViewController.m */,
 				256DD3D61E93A97C00DC5D31 /* CustomMapViewController.swift */,
 				963193F31ECE4131002F954E /* Assets.xcassets */,
+				256DD3D81E93AD1800DC5D31 /* CustomCollectionViewCell.swift */,
 				96161BF51ED3E12500C5A9D7 /* GoogleService-Info.plist */,
+				256DD3D41E93A89200DC5D31 /* CustomCollectionViewController.swift */,
 				963193F11ECE3E17002F954E /* LaunchScreen.storyboard */,
 				A56203DF1E933FEA00122BDB /* Info.plist */,
 				9618C1A21E9F24AB0088A9BB /* Template-Bridging-Header.h */,
@@ -268,14 +268,14 @@
 			files = (
 				96CDBAC11EDA229C00A571DA /* BlogPostViewController.swift in Sources */,
 				9618C1A51E9F24AC0088A9BB /* SWRevealViewController.m in Sources */,
-				256DD3D11E93A82300DC5D31 /* CustomTableViewCell.swift in Sources */,
+				256DD3D11E93A82300DC5D31 /* ProgramTableViewCell.swift in Sources */,
 				96594F231EBAC8580058D354 /* EventsTableViewCell.swift in Sources */,
 				96F9B98F1EC3D65D0030FB7B /* FirstPageTableViewCell.swift in Sources */,
 				96594F1D1EBAC0D80058D354 /* EventsTableViewController.swift in Sources */,
 				96594F1B1EB8263B0058D354 /* CustomTabBarController.swift in Sources */,
 				256DD3D91E93AD1800DC5D31 /* CustomCollectionViewCell.swift in Sources */,
 				96CDBABF1ED684EB00A571DA /* BlogTableViewCell.swift in Sources */,
-				256DD3D31E93A84100DC5D31 /* CustomTableViewController.swift in Sources */,
+				256DD3D31E93A84100DC5D31 /* ProgramTableViewController.swift in Sources */,
 				A56203D41E933FEA00122BDB /* AppDelegate.swift in Sources */,
 				963193E71EC40326002F954E /* FirstPageTableViewController.swift in Sources */,
 				963193E91EC40436002F954E /* FirstPageViewController.swift in Sources */,

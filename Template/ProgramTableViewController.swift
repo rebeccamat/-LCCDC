@@ -1,5 +1,5 @@
 //
-//  CustomTableViewController.swift
+//  ProgramTableViewController.swift
 //  Template
 //
 //  Created by Mateo Garcia on 4/4/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomTableViewController: UITableViewController {
+class ProgramTableViewController: UITableViewController {
     
     var fileNames: [String] = ["items.imageAsset", "food.imageAsset", "food.imageAsset","food.imageAsset","food.imageAsset"]
     var addressText: [String] = ["Test", "Test1", "Test2", "Test3","Test4"]
@@ -70,13 +70,13 @@ class CustomTableViewController: UITableViewController {
         
     //Breakpoint makes the program stop to see what state the code is in. Debug and take the drag the break points off the screen
     
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProgramTableViewCell", for: indexPath) as! ProgramTableViewCell
         cell.photoImageView.image = UIImage(named: fileNames[indexPath.row])
         cell.photoImageView.contentMode = .scaleAspectFill
         cell.addressLabel.text = addressText[indexPath.row]
         //This override creates all the cells, each cell has an imagename and identifier.
         
-        //The identifier is given to CustomTableViewCell.
+        //The identifier is given to ProgramTableViewCell.
 
         // Configure the cell...tell the commputer what to put in each cell; indexpath has two numbers, first column has 0 row 0, and second column 1 row 0.   
         
