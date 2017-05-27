@@ -35,18 +35,21 @@ class BlogTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return 6
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BlogCell", for: indexPath) as! BlogTableViewCell
+        if indexPath.row == 0 {
+            cell.titleImage.image=UIImage(named:"STREETCODE Class")
+            cell.titleLabel.text="Streetcode Class"
+        }
         if indexPath.row == 1 {
             cell.titleImage.image=UIImage(named:"Theresa 2")
             cell.titleLabel.text="Feeding the Hungry"
             
         }
-        
         if indexPath.row == 2 {
             cell.titleImage.image=UIImage(named:"B2B")
             cell.titleLabel.text="Back Pack Give-Away B2B"
@@ -55,20 +58,33 @@ class BlogTableViewController: UITableViewController {
         if indexPath.row == 3 {
             cell.titleImage.image=UIImage(named:"Edwin Hawkins Food Drive")
             cell.titleLabel.text="Food Drive"
+            
         }
+        if indexPath.row == 4 {
+            cell.titleImage.image=UIImage(named:"Dance at B2B")
+            cell.titleLabel.text="Dance At B2B"
+            
+        }
+    
+        if indexPath.row == 5 {
+            cell.titleImage.image=UIImage(named:"Fundraising")
+            cell.titleLabel.text="Fundraising"
+        }
+    
         // Configure the cell...
         
 
         return cell
-    }
-    
+
+}
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "blogPost") as! BlogPostViewController
         let cell=tableView.cellForRow(at: indexPath) as! BlogTableViewCell
         controller.titleText = cell.titleLabel.text!
         controller.titleImage = cell.titleImage.image
-        controller.blogText = "sting"
+        controller.blogText = blogPosts[indexPath.row]
         navigationController?.pushViewController(controller, animated: true)
     }
     
