@@ -47,7 +47,15 @@ class BlogTableViewController: UITableViewController {
             
         }
         
-
+        if indexPath.row == 2 {
+            cell.titleImage.image=UIImage(named:"B2B")
+            cell.titleLabel.text="Back Pack Give-Away B2B"
+            
+        }
+        if indexPath.row == 3 {
+            cell.titleImage.image=UIImage(named:"Edwin Hawkins Food Drive")
+            cell.titleLabel.text="Food Drive"
+        }
         // Configure the cell...
         
 
@@ -56,7 +64,11 @@ class BlogTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "blogPost")
+        let controller = storyboard.instantiateViewController(withIdentifier: "blogPost") as! BlogPostViewController
+        let cell=tableView.cellForRow(at: indexPath) as! BlogTableViewCell
+        controller.titleText = cell.titleLabel.text!
+        controller.titleImage = cell.titleImage.image
+        controller.blogText = "sting"
         navigationController?.pushViewController(controller, animated: true)
     }
     

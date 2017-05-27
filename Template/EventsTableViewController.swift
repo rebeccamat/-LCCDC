@@ -34,20 +34,27 @@ class EventsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 4
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventsCell", for: indexPath) as! EventsTableViewCell
+        
         if(indexPath.row==1){
+            cell.titleLabel.text = "Visit to FaceBook"
+            cell.whereLabel.text = "FB Campus"
+            cell.whenLabel.text = "Tuesday, November 20, 2017 "
+            cell.timeLabel.text = "12 Noon to 4:00 PM "
+        }
+        if(indexPath.row==2){
             cell.titleLabel.text = "Feeding the Homeless"
             cell.whereLabel.text = "Love Center Church"
             cell.whenLabel.text = "Saturday, September 20, 2017 "
             cell.timeLabel.text = "12 Noon to 4:00 PM "
             
         }
-        if(indexPath.row==2){
+        if(indexPath.row==3){
             cell.titleLabel.text = "Hot Meals for Hungry People"
             cell.whereLabel.text = "Love Center Church"
             cell.whenLabel.text = "Saturday, June 1, 2017 "

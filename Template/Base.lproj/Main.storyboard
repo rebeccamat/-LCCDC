@@ -282,10 +282,10 @@
             </objects>
             <point key="canvasLocation" x="-1016.8" y="580.65967016491754"/>
         </scene>
-        <!--View Controller-->
+        <!--Blog Post View Controller-->
         <scene sceneID="jzW-QW-KBv">
             <objects>
-                <viewController storyboardIdentifier="blogPost" id="049-91-VWz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="blogPost" id="049-91-VWz" customClass="BlogPostViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oOb-8c-POB"/>
                         <viewControllerLayoutGuide type="bottom" id="guK-m4-H0h"/>
@@ -316,6 +316,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="blogImageView" destination="hlj-Fg-j3f" id="hZS-eu-H19"/>
+                        <outlet property="blogTextView" destination="lnm-9s-bxw" id="7zM-uL-QAn"/>
+                        <outlet property="titleLabel" destination="672-5H-Xco" id="WSk-Nk-Hsd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZD-YV-h49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -454,7 +459,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CTy-F0-3WU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="BLOG" id="rzk-My-5aC" userLabel="BLOG"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nPe-hv-vk9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nPe-hv-vk9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
