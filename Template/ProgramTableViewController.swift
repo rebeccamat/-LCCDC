@@ -10,7 +10,7 @@ import UIKit
 
 class ProgramTableViewController: UITableViewController {
     
-    var fileNames: [String] = ["items.imageAsset", "food.imageAsset", "food.imageAsset","food.imageAsset","food.imageAsset"]
+    var fileNames: [String] = ["Programs Chabot", "DOW", "food.imageAsset","food.imageAsset","food.imageAsset"]
     var addressText: [String] = ["Pilot S.T.E.A.M. Program", "Feeding the Hungry", "Chabot Space & Science Center", "Assisting the Homeless","Mental Health Services"]
     
     
@@ -39,7 +39,7 @@ class ProgramTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return fileNames.count
+        return fileNames.count + 1
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -69,6 +69,12 @@ class ProgramTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
     //Breakpoint makes the program stop to see what state the code is in. Debug and take the drag the break points off the screen
+    
+        if indexPath.row == 5 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProgramWebViewCell", for: indexPath) as! ProgramWebViewCell
+            cell.loadurl(url: "https://www.youtube.com/watch?v=2IVQGL-kbrA")
+            return cell
+        }
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProgramTableViewCell", for: indexPath) as! ProgramTableViewCell
         cell.photoImageView.image = UIImage(named: fileNames[indexPath.row])

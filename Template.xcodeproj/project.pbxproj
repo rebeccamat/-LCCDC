@@ -22,6 +22,7 @@
 		96594F1D1EBAC0D80058D354 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F1C1EBAC0D80058D354 /* EventsTableViewController.swift */; };
 		96594F1F1EBAC10E0058D354 /* BlogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F1E1EBAC10E0058D354 /* BlogTableViewController.swift */; };
 		96594F231EBAC8580058D354 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F221EBAC8580058D354 /* EventsTableViewCell.swift */; };
+		96C690C71EDFB64F00063304 /* ProgramWebViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C690C61EDFB64F00063304 /* ProgramWebViewCell.swift */; };
 		96CDBABF1ED684EB00A571DA /* BlogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDBABE1ED684EB00A571DA /* BlogTableViewCell.swift */; };
 		96CDBAC11EDA229C00A571DA /* BlogPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDBAC01EDA229A00A571DA /* BlogPostViewController.swift */; };
 		96CDBAC31EDA39B100A571DA /* blogPostText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDBAC21EDA39B100A571DA /* blogPostText.swift */; };
@@ -50,6 +51,7 @@
 		96594F1C1EBAC0D80058D354 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		96594F1E1EBAC10E0058D354 /* BlogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogTableViewController.swift; sourceTree = "<group>"; };
 		96594F221EBAC8580058D354 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		96C690C61EDFB64F00063304 /* ProgramWebViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramWebViewCell.swift; sourceTree = "<group>"; };
 		96CDBABE1ED684EB00A571DA /* BlogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogTableViewCell.swift; sourceTree = "<group>"; };
 		96CDBAC01EDA229A00A571DA /* BlogPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogPostViewController.swift; sourceTree = "<group>"; };
 		96CDBAC21EDA39B100A571DA /* blogPostText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blogPostText.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				96594F221EBAC8580058D354 /* EventsTableViewCell.swift */,
 				96594F1C1EBAC0D80058D354 /* EventsTableViewController.swift */,
 				256DD3D21E93A84100DC5D31 /* ProgramTableViewController.swift */,
+				96C690C61EDFB64F00063304 /* ProgramWebViewCell.swift */,
 				256DD3D01E93A82300DC5D31 /* ProgramTableViewCell.swift */,
 				9618C1A31E9F24AC0088A9BB /* SWRevealViewController.h */,
 				9618C1A41E9F24AC0088A9BB /* SWRevealViewController.m */,
@@ -274,6 +277,7 @@
 				96594F1D1EBAC0D80058D354 /* EventsTableViewController.swift in Sources */,
 				96594F1B1EB8263B0058D354 /* CustomTabBarController.swift in Sources */,
 				256DD3D91E93AD1800DC5D31 /* CustomCollectionViewCell.swift in Sources */,
+				96C690C71EDFB64F00063304 /* ProgramWebViewCell.swift in Sources */,
 				96CDBABF1ED684EB00A571DA /* BlogTableViewCell.swift in Sources */,
 				256DD3D31E93A84100DC5D31 /* ProgramTableViewController.swift in Sources */,
 				A56203D41E933FEA00122BDB /* AppDelegate.swift in Sources */,
