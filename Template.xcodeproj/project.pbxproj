@@ -402,6 +402,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H685DJUKQR;
 				INFOPLIST_FILE = Template/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.streetcode.LCCDC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +421,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H685DJUKQR;
 				INFOPLIST_FILE = Template/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.streetcode.LCCDC;
 				PRODUCT_NAME = "$(TARGET_NAME)";

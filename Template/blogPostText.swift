@@ -8,8 +8,8 @@
 
 import Foundation
 
-let blogPosts = ["This is a Streetcode Class in East Palo Alto, CA",
-"We feeding hungry people on a regular basis.",
+let blogPosts = ["This is a Streetcode Class in East Palo Alto, CA. Here people of all ages learn to code; in IOS,        ",
+"We feed hungry people on a regular basis.",
 "",
 "",
 "",
