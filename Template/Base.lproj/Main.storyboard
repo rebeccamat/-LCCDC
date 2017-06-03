@@ -81,10 +81,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bq8-cv-yYU">
-                                <rect key="frame" x="0.0" y="386" width="375" height="57"/>
+                                <rect key="frame" x="0.0" y="385" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="PROGRAMS">
+                                <state key="normal" title="PROJECTS">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -109,7 +109,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="FIRST PAGE" image="HomeIcon" id="FTs-7G-J6t"/>
+                    <tabBarItem key="tabBarItem" title="FIRST PAGE" image="Ideas" id="FTs-7G-J6t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMt-Pw-fri" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,18 +119,17 @@
         <scene sceneID="IOa-zF-oC5">
             <objects>
                 <tabBarController id="7UH-iD-HM5" customClass="CustomTabBarController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="7Oe-Gi-tSB">
+                    <tabBar key="tabBar" contentMode="scaleToFill" backgroundImage="navigationicons-heart" id="7Oe-Gi-tSB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="selectedImageTintColor" red="1" green="0.71098340999999998" blue="0.64900489490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Npf-mP-bFF" kind="relationship" relationship="viewControllers" id="6ix-Dm-EEK"/>
                         <segue destination="CTy-F0-3WU" kind="relationship" relationship="viewControllers" id="1e8-5f-jIM"/>
                         <segue destination="RtQ-Fe-N0A" kind="relationship" relationship="viewControllers" id="dyV-cM-CQw"/>
-                        <segue destination="ZtS-63-YAt" kind="relationship" relationship="viewControllers" id="ryJ-9I-CHP"/>
                         <segue destination="7OT-3e-TdY" kind="relationship" relationship="viewControllers" id="Bww-OG-YnP"/>
+                        <segue destination="ZtS-63-YAt" kind="relationship" relationship="viewControllers" id="ryJ-9I-CHP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YoM-N0-r2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -236,7 +235,7 @@
                             <outlet property="delegate" destination="RtQ-Fe-N0A" id="dkF-7r-ddi"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="EVENTS" image="MapIcon" id="9Jw-bB-5wc"/>
+                    <tabBarItem key="tabBarItem" title="EVENTS" image="Blog" id="9Jw-bB-5wc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OHY-tk-tGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -311,7 +310,6 @@
                                 <rect key="frame" x="8" y="405" width="359" height="262"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legumLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -332,7 +330,7 @@
             </objects>
             <point key="canvasLocation" x="-1956" y="1260.7196401799101"/>
         </scene>
-        <!--PROGRAMS-->
+        <!--PROJECTS-->
         <scene sceneID="QMg-Hx-oNp">
             <objects>
                 <tableViewController id="ZtS-63-YAt" customClass="ProgramTableViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
@@ -406,7 +404,7 @@
                             <outlet property="delegate" destination="ZtS-63-YAt" id="T7J-dN-Ex2"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="PROGRAMS" image="Programs" id="5Qg-T5-kaM">
+                    <tabBarItem key="tabBarItem" title="PROJECTS" image="Programs" id="5Qg-T5-kaM">
                         <inset key="imageInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                     </tabBarItem>
                 </tableViewController>
@@ -451,7 +449,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="DONORS" image="heart" id="P7b-i2-Fyk"/>
+                    <tabBarItem key="tabBarItem" title="DONORS" image="Donors" id="P7b-i2-Fyk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZbV-uP-lD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -498,7 +496,7 @@
         <scene sceneID="zEN-tT-lYG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CTy-F0-3WU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="BLOG" id="rzk-My-5aC" userLabel="BLOG"/>
+                    <tabBarItem key="tabBarItem" title="BLOG" image="Blog" id="rzk-My-5aC" userLabel="BLOG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nPe-hv-vk9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -515,15 +513,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Blog" width="33" height="34"/>
         <image name="Davis 2" width="5312" height="2988"/>
-        <image name="HomeIcon" width="50" height="50"/>
+        <image name="Donors" width="45" height="39"/>
+        <image name="Ideas" width="25" height="38"/>
         <image name="LCCDC Logo copy" width="1200" height="833"/>
         <image name="LCCDC Logo sm" width="150" height="150"/>
         <image name="MapIcon" width="25" height="25"/>
         <image name="MyLocationIcon" width="60" height="60"/>
         <image name="Programs" width="29" height="36"/>
         <image name="STREETCODE Class" width="4032" height="3024"/>
-        <image name="heart" width="49" height="46"/>
         <image name="iphone background2" width="596" height="1072"/>
+        <image name="navigationicons-heart" width="20" height="20"/>
     </resources>
 </document>

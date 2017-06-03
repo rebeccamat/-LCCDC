@@ -11,7 +11,7 @@ import UIKit
 class ProgramTableViewController: UITableViewController {
     
     var fileNames: [String] = ["Programs Chabot", "DOW", "food.imageAsset","food.imageAsset","food.imageAsset"]
-    var addressText: [String] = ["Pilot S.T.E.A.M. Program", "Feeding the Hungry", "Chabot Space & Science Center", "Assisting the Homeless","Mental Health Services"]
+    var addressText: [String] = ["Pilot S.T.E.A.M. Program", "Feeding the Hungry", "Chabot Space & Science Center", "DOW Assisting the Homeless","Mental Health Services"]
     
     
     // I need a database to pull my images and videos

@@ -47,7 +47,7 @@ class BlogTableViewController: UITableViewController {
         }
         if indexPath.row == 1 {
             cell.titleImage.image=UIImage(named:"Theresa 2")
-            cell.titleLabel.text="Feeding the Hungry"
+            cell.titleLabel.text="We Feed the Hungry"
             
         }
         if indexPath.row == 2 {
