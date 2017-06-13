@@ -12,7 +12,7 @@ class EventsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -41,18 +41,21 @@ class EventsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventsCell", for: indexPath) as! EventsTableViewCell
         
+        cell.viewController = self
+        
         if(indexPath.row==0){
             cell.titleLabel.text = "Visit to FaceBook"
             cell.whereLabel.text = "FB Campus"
             cell.whenLabel.text = "Tuesday, November 20, 2017 "
             cell.timeLabel.text = "12 Noon to 4:00 PM "
+            cell.eventImage.image = UIImage(named:"Facebook logo")
         }
         if(indexPath.row==1){
             cell.titleLabel.text = "Feeding the Homeless"
             cell.whereLabel.text = "Love Center Church"
             cell.whenLabel.text = "Saturday, September 20, 2017 "
             cell.timeLabel.text = "12 Noon to 4:00 PM "
-            
+            cell.eventImage.image = UIImage(named: "EdwinHawkinsFoodDrive")
         }
         if(indexPath.row==2){
             cell.titleLabel.text = "Hot Meals for Hungry People"
@@ -88,7 +91,6 @@ class EventsTableViewController: UITableViewController {
 
         return cell
     }
-
 
     /*
     // Override to support conditional editing of the table view.

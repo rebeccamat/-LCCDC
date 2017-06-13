@@ -12,6 +12,7 @@
 		256DD3D51E93A89200DC5D31 /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D41E93A89200DC5D31 /* CustomCollectionViewController.swift */; };
 		256DD3D71E93A97C00DC5D31 /* CustomMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D61E93A97C00DC5D31 /* CustomMapViewController.swift */; };
 		256DD3D91E93AD1800DC5D31 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D81E93AD1800DC5D31 /* CustomCollectionViewCell.swift */; };
+		960C280C1EEF80BB00A84931 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960C280B1EEF80BB00A84931 /* EventsTableViewController.swift */; };
 		96161BF61ED3E12500C5A9D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96161BF51ED3E12500C5A9D7 /* GoogleService-Info.plist */; };
 		9618C1A51E9F24AC0088A9BB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9618C1A41E9F24AC0088A9BB /* SWRevealViewController.m */; };
 		963193E71EC40326002F954E /* FirstPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963193E61EC40326002F954E /* FirstPageTableViewController.swift */; };
@@ -19,7 +20,6 @@
 		963193F21ECE3E17002F954E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963193F11ECE3E17002F954E /* LaunchScreen.storyboard */; };
 		963193F41ECE4131002F954E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963193F31ECE4131002F954E /* Assets.xcassets */; };
 		96594F1B1EB8263B0058D354 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F1A1EB8263B0058D354 /* CustomTabBarController.swift */; };
-		96594F1D1EBAC0D80058D354 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F1C1EBAC0D80058D354 /* EventsTableViewController.swift */; };
 		96594F1F1EBAC10E0058D354 /* BlogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F1E1EBAC10E0058D354 /* BlogTableViewController.swift */; };
 		96594F231EBAC8580058D354 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F221EBAC8580058D354 /* EventsTableViewCell.swift */; };
 		96C690C71EDFB64F00063304 /* ProgramWebViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C690C61EDFB64F00063304 /* ProgramWebViewCell.swift */; };
@@ -39,6 +39,7 @@
 		256DD3D61E93A97C00DC5D31 /* CustomMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapViewController.swift; sourceTree = "<group>"; };
 		256DD3D81E93AD1800DC5D31 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FADCD9AB830D9394A43AA7C /* Pods-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.release.xcconfig"; path = "Pods/Target Support Files/Pods-Template/Pods-Template.release.xcconfig"; sourceTree = "<group>"; };
+		960C280B1EEF80BB00A84931 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		96161BF51ED3E12500C5A9D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9618C1A21E9F24AB0088A9BB /* Template-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Template-Bridging-Header.h"; sourceTree = "<group>"; };
 		9618C1A31E9F24AC0088A9BB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		963193F11ECE3E17002F954E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		963193F31ECE4131002F954E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96594F1A1EB8263B0058D354 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
-		96594F1C1EBAC0D80058D354 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		96594F1E1EBAC10E0058D354 /* BlogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogTableViewController.swift; sourceTree = "<group>"; };
 		96594F221EBAC8580058D354 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		96C690C61EDFB64F00063304 /* ProgramWebViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramWebViewCell.swift; sourceTree = "<group>"; };
@@ -125,10 +125,10 @@
 				96CDBABE1ED684EB00A571DA /* BlogTableViewCell.swift */,
 				96594F1E1EBAC10E0058D354 /* BlogTableViewController.swift */,
 				96CDBAC21EDA39B100A571DA /* blogPostText.swift */,
-				96594F1C1EBAC0D80058D354 /* EventsTableViewController.swift */,
 				96594F221EBAC8580058D354 /* EventsTableViewCell.swift */,
 				256DD3D21E93A84100DC5D31 /* ProgramTableViewController.swift */,
 				256DD3D01E93A82300DC5D31 /* ProgramTableViewCell.swift */,
+				960C280B1EEF80BB00A84931 /* EventsTableViewController.swift */,
 				96C690C61EDFB64F00063304 /* ProgramWebViewCell.swift */,
 				9618C1A31E9F24AC0088A9BB /* SWRevealViewController.h */,
 				9618C1A41E9F24AC0088A9BB /* SWRevealViewController.m */,
@@ -271,10 +271,10 @@
 			files = (
 				96CDBAC11EDA229C00A571DA /* BlogPostViewController.swift in Sources */,
 				9618C1A51E9F24AC0088A9BB /* SWRevealViewController.m in Sources */,
+				960C280C1EEF80BB00A84931 /* EventsTableViewController.swift in Sources */,
 				256DD3D11E93A82300DC5D31 /* ProgramTableViewCell.swift in Sources */,
 				96594F231EBAC8580058D354 /* EventsTableViewCell.swift in Sources */,
 				96F9B98F1EC3D65D0030FB7B /* FirstPageTableViewCell.swift in Sources */,
-				96594F1D1EBAC0D80058D354 /* EventsTableViewController.swift in Sources */,
 				96594F1B1EB8263B0058D354 /* CustomTabBarController.swift in Sources */,
 				256DD3D91E93AD1800DC5D31 /* CustomCollectionViewCell.swift in Sources */,
 				96C690C71EDFB64F00063304 /* ProgramWebViewCell.swift in Sources */,

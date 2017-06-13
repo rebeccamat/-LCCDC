@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Dance at B2B.jpg",
+      "filename" : "Derek Andersen-StartupGrind.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Derek Andersen-StartupGrind-1.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Derek Andersen-StartupGrind-2.jpg",
       "scale" : "3x"
     }
   ],

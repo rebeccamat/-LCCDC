@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7UH-iD-HM5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7UH-iD-HM5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -42,7 +42,7 @@
             </objects>
             <point key="canvasLocation" x="-2546" y="-382"/>
         </scene>
-        <!--FIRST PAGE-->
+        <!--First Page View Controller-->
         <scene sceneID="gmh-Zt-oG3">
             <objects>
                 <viewController id="Npf-mP-bFF" customClass="FirstPageViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,7 +51,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jTw-hW-A61"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WHA-iN-8gq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone background2" translatesAutoresizingMaskIntoConstraints="NO" id="pPm-kY-dqC">
@@ -109,7 +109,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="FIRST PAGE" image="Ideas" id="FTs-7G-J6t"/>
+                    <tabBarItem key="tabBarItem" image="navIcon-firstpage" selectedImage="navIcon-firstpage" id="FTs-7G-J6t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMt-Pw-fri" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,17 +119,18 @@
         <scene sceneID="IOa-zF-oC5">
             <objects>
                 <tabBarController id="7UH-iD-HM5" customClass="CustomTabBarController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" backgroundImage="navigationicons-heart" id="7Oe-Gi-tSB">
+                    <tabBar key="tabBar" autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" translucent="NO" backgroundImage="navIcons-HEART" id="7Oe-Gi-tSB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.35707083499999998" green="0.26500947289999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Npf-mP-bFF" kind="relationship" relationship="viewControllers" id="6ix-Dm-EEK"/>
-                        <segue destination="CTy-F0-3WU" kind="relationship" relationship="viewControllers" id="1e8-5f-jIM"/>
                         <segue destination="RtQ-Fe-N0A" kind="relationship" relationship="viewControllers" id="dyV-cM-CQw"/>
-                        <segue destination="7OT-3e-TdY" kind="relationship" relationship="viewControllers" id="Bww-OG-YnP"/>
                         <segue destination="ZtS-63-YAt" kind="relationship" relationship="viewControllers" id="ryJ-9I-CHP"/>
+                        <segue destination="CTy-F0-3WU" kind="relationship" relationship="viewControllers" id="1e8-5f-jIM"/>
+                        <segue destination="7OT-3e-TdY" kind="relationship" relationship="viewControllers" id="Bww-OG-YnP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YoM-N0-r2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,7 +142,7 @@
             <objects>
                 <tableViewController id="RtQ-Fe-N0A" customClass="EventsTableViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="308" sectionHeaderHeight="28" sectionFooterHeight="28" id="90Z-r7-hPA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -190,6 +191,9 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="0.8355734383659863" blue="0.28623983846557566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal" title="Add to Calendar"/>
+                                            <connections>
+                                                <action selector="addEventToCalendar:" destination="eYw-ct-3J2" eventType="touchUpInside" id="P7w-hC-Xni"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGa-XR-z6w">
                                             <rect key="frame" x="200" y="110" width="175" height="30"/>
@@ -216,13 +220,15 @@
                                             <color key="backgroundColor" red="1" green="0.83557343839999998" blue="0.28623983850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal" title="When"/>
                                         </button>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Davis 2" translatesAutoresizingMaskIntoConstraints="NO" id="6wK-Va-EpS">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Facebook logo" translatesAutoresizingMaskIntoConstraints="NO" id="6wK-Va-EpS" userLabel="Image">
                                             <rect key="frame" x="0.0" y="62" width="194" height="243"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="addToCalendarButton" destination="Uaf-4G-v0J" id="Nck-FC-qfh"/>
+                                    <outlet property="eventImage" destination="6wK-Va-EpS" id="1Xz-na-HuW"/>
                                     <outlet property="timeLabel" destination="6wI-xE-Ehq" id="iXF-hS-8Yh"/>
                                     <outlet property="titleLabel" destination="my5-kB-2eh" id="6Nh-So-pEh"/>
                                     <outlet property="whenLabel" destination="EqO-Fq-w2k" id="j3i-Vl-TvG"/>
@@ -246,7 +252,7 @@
             <objects>
                 <tableViewController id="A99-Kk-d2y" userLabel="BLOG" customClass="BlogTableViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="291" sectionHeaderHeight="28" sectionFooterHeight="28" id="kZE-G4-g35">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -335,7 +341,7 @@
             <objects>
                 <tableViewController id="ZtS-63-YAt" customClass="ProgramTableViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="262" sectionHeaderHeight="28" sectionFooterHeight="28" id="pPF-R9-wCg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <webView key="tableFooterView" contentMode="scaleToFill" id="3jT-s7-Wtl">
@@ -421,7 +427,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Coc-lc-x8m"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ufc-Cr-dFY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7LR-R3-ovh">
@@ -498,7 +504,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CTy-F0-3WU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="BLOG" image="Blog" id="rzk-My-5aC" userLabel="BLOG"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nPe-hv-vk9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nPe-hv-vk9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -514,9 +520,8 @@
     </scenes>
     <resources>
         <image name="Blog" width="33" height="34"/>
-        <image name="Davis 2" width="5312" height="2988"/>
         <image name="Donors" width="45" height="39"/>
-        <image name="Ideas" width="25" height="38"/>
+        <image name="Facebook logo" width="191" height="243"/>
         <image name="LCCDC Logo copy" width="1200" height="833"/>
         <image name="LCCDC Logo sm" width="150" height="150"/>
         <image name="MapIcon" width="25" height="25"/>
@@ -524,6 +529,7 @@
         <image name="Programs" width="29" height="36"/>
         <image name="STREETCODE Class" width="4032" height="3024"/>
         <image name="iphone background2" width="596" height="1072"/>
-        <image name="navigationicons-heart" width="20" height="20"/>
+        <image name="navIcon-firstpage" width="20" height="20"/>
+        <image name="navIcons-HEART" width="20" height="20"/>
     </resources>
 </document>
