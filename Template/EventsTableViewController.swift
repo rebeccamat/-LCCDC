@@ -49,6 +49,7 @@ class EventsTableViewController: UITableViewController {
             cell.whenLabel.text = "Tuesday, November 20, 2017 "
             cell.timeLabel.text = "12 Noon to 4:00 PM "
             cell.eventImage.image = UIImage(named:"Facebook logo")
+            cell.date = NSDate(timeIntervalSince1970: 1511208000)
         }
         if(indexPath.row==1){
             cell.titleLabel.text = "Feeding the Homeless"

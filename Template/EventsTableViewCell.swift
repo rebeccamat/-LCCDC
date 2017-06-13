@@ -21,6 +21,9 @@ class EventsTableViewCell: UITableViewCell {
     
     var viewController: UITableViewController?
     
+    var title: NSString?
+    var date: NSDate?
+    
     let eventStore = EKEventStore()
     
     override func awakeFromNib() {
@@ -107,9 +110,9 @@ class EventsTableViewCell: UITableViewCell {
         print(calendar)
         
         // 3
-        let startDate = NSDate()
+        let startDate = self.date != nil ? self.date : NSDate()
         // 2 hours
-        let endDate = startDate.addingTimeInterval(2 * 60 * 60)
+        let endDate = startDate?.addingTimeInterval(2 * 60 * 60)
                 
         // 4
         // Create Event
@@ -117,8 +120,8 @@ class EventsTableViewCell: UITableViewCell {
         event.calendar = calendar
 
         event.title = "New Meeting"
-        event.startDate = startDate as Date
-        event.endDate = endDate as Date
+        event.startDate = (startDate as! NSDate) as Date
+        event.endDate = (endDate as! NSDate) as Date
         
         // 5
         // Save Event in Calendar
