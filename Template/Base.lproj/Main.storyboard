@@ -51,7 +51,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jTw-hW-A61"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WHA-iN-8gq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone background2" translatesAutoresizingMaskIntoConstraints="NO" id="pPm-kY-dqC">
@@ -109,7 +109,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="navIcon-firstpage" selectedImage="navIcon-firstpage" id="FTs-7G-J6t"/>
+                    <tabBarItem key="tabBarItem" badgeValue="First Page" selectedImage="navIcon-firstpage" id="FTs-7G-J6t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMt-Pw-fri" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,11 +119,12 @@
         <scene sceneID="IOa-zF-oC5">
             <objects>
                 <tabBarController id="7UH-iD-HM5" customClass="CustomTabBarController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" translucent="NO" backgroundImage="navIcons-HEART" id="7Oe-Gi-tSB">
+                    <tabBar key="tabBar" autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" backgroundImage="navIcon-firstpage" itemPositioning="centered" id="7Oe-Gi-tSB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="0.35707083499999998" green="0.26500947289999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.25219724491405549" green="0.13291510004224549" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.97989697252513797" green="0.6093906299751064" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Npf-mP-bFF" kind="relationship" relationship="viewControllers" id="6ix-Dm-EEK"/>
@@ -142,7 +143,7 @@
             <objects>
                 <tableViewController id="RtQ-Fe-N0A" customClass="EventsTableViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="308" sectionHeaderHeight="28" sectionFooterHeight="28" id="90Z-r7-hPA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -241,7 +242,10 @@
                             <outlet property="delegate" destination="RtQ-Fe-N0A" id="dkF-7r-ddi"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="EVENTS" image="Blog" id="9Jw-bB-5wc"/>
+                    <tabBarItem key="tabBarItem" tag="-1" title="EVENTS" image="Events" badgeValue="Come" selectedImage="Events" id="9Jw-bB-5wc" propertyAccessControl="none">
+                        <inset key="imageInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="-10" vertical="0.0"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OHY-tk-tGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -252,7 +256,7 @@
             <objects>
                 <tableViewController id="A99-Kk-d2y" userLabel="BLOG" customClass="BlogTableViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="291" sectionHeaderHeight="28" sectionFooterHeight="28" id="kZE-G4-g35">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -339,9 +343,9 @@
         <!--PROJECTS-->
         <scene sceneID="QMg-Hx-oNp">
             <objects>
-                <tableViewController id="ZtS-63-YAt" customClass="ProgramTableViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ZtS-63-YAt" customClass="ProjectTableViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="262" sectionHeaderHeight="28" sectionFooterHeight="28" id="pPF-R9-wCg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <webView key="tableFooterView" contentMode="scaleToFill" id="3jT-s7-Wtl">
@@ -350,7 +354,7 @@
                             <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </webView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgramTableViewCell" rowHeight="262" id="pCm-ny-1YB" customClass="ProgramTableViewCell" customModule="Template" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectTableViewCell" rowHeight="262" id="pCm-ny-1YB" customClass="ProjectTableViewCell" customModule="Template" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="262"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pCm-ny-1YB" id="KQK-Rx-DRq">
@@ -378,7 +382,7 @@
                                     <outlet property="photoImageView" destination="NVz-Uz-ySR" id="0KK-MW-AzE"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgramWebViewCell" rowHeight="262" id="sVB-76-iln" customClass="ProgramWebViewCell" customModule="Template" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectWebViewCell" rowHeight="262" id="sVB-76-iln" customClass="ProjectWebViewCell" customModule="Template" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="290" width="375" height="262"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sVB-76-iln" id="ccw-e9-i9n">
@@ -410,8 +414,9 @@
                             <outlet property="delegate" destination="ZtS-63-YAt" id="T7J-dN-Ex2"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="PROJECTS" image="Programs" id="5Qg-T5-kaM">
+                    <tabBarItem key="tabBarItem" tag="1" title="PROJECTS" badgeValue="We Do" id="5Qg-T5-kaM">
                         <inset key="imageInsets" minX="1" minY="1" maxX="1" maxY="1"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="-10" vertical="0.0"/>
                     </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZJ-t8-hE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -427,7 +432,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Coc-lc-x8m"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ufc-Cr-dFY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7LR-R3-ovh">
@@ -455,7 +460,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="DONORS" image="Donors" id="P7b-i2-Fyk"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="DONORS" badgeValue="THX" id="P7b-i2-Fyk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZbV-uP-lD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -502,9 +507,11 @@
         <scene sceneID="zEN-tT-lYG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CTy-F0-3WU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="BLOG" image="Blog" id="rzk-My-5aC" userLabel="BLOG"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="BLOG" badgeValue="Let's Talk" id="rzk-My-5aC" userLabel="BLOG">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="-11" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nPe-hv-vk9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nPe-hv-vk9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -519,17 +526,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Blog" width="33" height="34"/>
-        <image name="Donors" width="45" height="39"/>
+        <image name="Events" width="20" height="18"/>
         <image name="Facebook logo" width="191" height="243"/>
         <image name="LCCDC Logo copy" width="1200" height="833"/>
         <image name="LCCDC Logo sm" width="150" height="150"/>
         <image name="MapIcon" width="25" height="25"/>
         <image name="MyLocationIcon" width="60" height="60"/>
-        <image name="Programs" width="29" height="36"/>
         <image name="STREETCODE Class" width="4032" height="3024"/>
         <image name="iphone background2" width="596" height="1072"/>
         <image name="navIcon-firstpage" width="20" height="20"/>
-        <image name="navIcons-HEART" width="20" height="20"/>
     </resources>
 </document>

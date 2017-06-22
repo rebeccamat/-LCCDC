@@ -63,21 +63,21 @@ class EventsTableViewController: UITableViewController {
             cell.whereLabel.text = "Love Center Church"
             cell.whenLabel.text = "Saturday, June 1, 2017 "
             cell.timeLabel.text = "4 Noon to 6:00 PM "
-            
+            cell.eventImage.image = UIImage(named: "balancedmeal")
         }
         if(indexPath.row==3){
             cell.titleLabel.text = "Back Pack Give-A=Way"
             cell.whereLabel.text = "Love Center Church"
             cell.whenLabel.text = "Saturday, August 1, 2017 "
             cell.timeLabel.text = "11:00 to 5:00 PM "
-            
+            cell.eventImage.image = UIImage(named: "B2B")
         }
         if(indexPath.row==4){
         cell.titleLabel.text = "Thanksgiving Food Give-A-Way"
         cell.whereLabel.text = "Love Center Church"
         cell.whenLabel.text = "Saturday, November 20, 2017 "
         cell.timeLabel.text = "11:00 to 3:00 PM "
-    
+        cell.eventImage.image = UIImage(named: "Theresa Taliaferro")
         }
 
         if(indexPath.row==5){

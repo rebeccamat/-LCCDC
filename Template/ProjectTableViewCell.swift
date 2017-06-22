@@ -1,5 +1,5 @@
 //
-//  ProgramTableViewCell.swift
+//  ProjectTableViewCell.swift
 //  Template
 //
 //  Created by Mateo Garcia on 4/4/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProgramTableViewCell: UITableViewCell {
+class ProjectTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var photoImageView: UIImageView!

@@ -1,5 +1,5 @@
 //
-//  ProgramWebViewCell.swift
+//  ProjectWebViewCell.swift
 //  Template
 //
 //  Created by rebecca matthews on 5/31/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProgramWebViewCell: UITableViewCell {
+class ProjectWebViewCell: UITableViewCell {
     
     @IBOutlet weak var webView: UIWebView!
 

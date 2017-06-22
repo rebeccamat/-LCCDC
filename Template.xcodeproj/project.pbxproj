@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		256DD3D11E93A82300DC5D31 /* ProgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D01E93A82300DC5D31 /* ProgramTableViewCell.swift */; };
-		256DD3D31E93A84100DC5D31 /* ProgramTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D21E93A84100DC5D31 /* ProgramTableViewController.swift */; };
+		256DD3D11E93A82300DC5D31 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D01E93A82300DC5D31 /* ProjectTableViewCell.swift */; };
+		256DD3D31E93A84100DC5D31 /* ProjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D21E93A84100DC5D31 /* ProjectTableViewController.swift */; };
 		256DD3D51E93A89200DC5D31 /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D41E93A89200DC5D31 /* CustomCollectionViewController.swift */; };
 		256DD3D71E93A97C00DC5D31 /* CustomMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D61E93A97C00DC5D31 /* CustomMapViewController.swift */; };
 		256DD3D91E93AD1800DC5D31 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D81E93AD1800DC5D31 /* CustomCollectionViewCell.swift */; };
@@ -22,7 +22,7 @@
 		96594F1B1EB8263B0058D354 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F1A1EB8263B0058D354 /* CustomTabBarController.swift */; };
 		96594F1F1EBAC10E0058D354 /* BlogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F1E1EBAC10E0058D354 /* BlogTableViewController.swift */; };
 		96594F231EBAC8580058D354 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F221EBAC8580058D354 /* EventsTableViewCell.swift */; };
-		96C690C71EDFB64F00063304 /* ProgramWebViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C690C61EDFB64F00063304 /* ProgramWebViewCell.swift */; };
+		96C690C71EDFB64F00063304 /* ProjectWebViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C690C61EDFB64F00063304 /* ProjectWebViewCell.swift */; };
 		96CDBABF1ED684EB00A571DA /* BlogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDBABE1ED684EB00A571DA /* BlogTableViewCell.swift */; };
 		96CDBAC11EDA229C00A571DA /* BlogPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDBAC01EDA229A00A571DA /* BlogPostViewController.swift */; };
 		96CDBAC31EDA39B100A571DA /* blogPostText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDBAC21EDA39B100A571DA /* blogPostText.swift */; };
@@ -33,8 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		256DD3D01E93A82300DC5D31 /* ProgramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramTableViewCell.swift; sourceTree = "<group>"; };
-		256DD3D21E93A84100DC5D31 /* ProgramTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramTableViewController.swift; sourceTree = "<group>"; };
+		256DD3D01E93A82300DC5D31 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		256DD3D21E93A84100DC5D31 /* ProjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewController.swift; sourceTree = "<group>"; };
 		256DD3D41E93A89200DC5D31 /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
 		256DD3D61E93A97C00DC5D31 /* CustomMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapViewController.swift; sourceTree = "<group>"; };
 		256DD3D81E93AD1800DC5D31 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		96594F1A1EB8263B0058D354 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		96594F1E1EBAC10E0058D354 /* BlogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogTableViewController.swift; sourceTree = "<group>"; };
 		96594F221EBAC8580058D354 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
-		96C690C61EDFB64F00063304 /* ProgramWebViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramWebViewCell.swift; sourceTree = "<group>"; };
+		96C690C61EDFB64F00063304 /* ProjectWebViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectWebViewCell.swift; sourceTree = "<group>"; };
 		96CDBABE1ED684EB00A571DA /* BlogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogTableViewCell.swift; sourceTree = "<group>"; };
 		96CDBAC01EDA229A00A571DA /* BlogPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogPostViewController.swift; sourceTree = "<group>"; };
 		96CDBAC21EDA39B100A571DA /* blogPostText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blogPostText.swift; sourceTree = "<group>"; };
@@ -126,10 +126,10 @@
 				96594F1E1EBAC10E0058D354 /* BlogTableViewController.swift */,
 				96CDBAC21EDA39B100A571DA /* blogPostText.swift */,
 				96594F221EBAC8580058D354 /* EventsTableViewCell.swift */,
-				256DD3D21E93A84100DC5D31 /* ProgramTableViewController.swift */,
-				256DD3D01E93A82300DC5D31 /* ProgramTableViewCell.swift */,
 				960C280B1EEF80BB00A84931 /* EventsTableViewController.swift */,
-				96C690C61EDFB64F00063304 /* ProgramWebViewCell.swift */,
+				256DD3D21E93A84100DC5D31 /* ProjectTableViewController.swift */,
+				256DD3D01E93A82300DC5D31 /* ProjectTableViewCell.swift */,
+				96C690C61EDFB64F00063304 /* ProjectWebViewCell.swift */,
 				9618C1A31E9F24AC0088A9BB /* SWRevealViewController.h */,
 				9618C1A41E9F24AC0088A9BB /* SWRevealViewController.m */,
 				256DD3D61E93A97C00DC5D31 /* CustomMapViewController.swift */,
@@ -272,14 +272,14 @@
 				96CDBAC11EDA229C00A571DA /* BlogPostViewController.swift in Sources */,
 				9618C1A51E9F24AC0088A9BB /* SWRevealViewController.m in Sources */,
 				960C280C1EEF80BB00A84931 /* EventsTableViewController.swift in Sources */,
-				256DD3D11E93A82300DC5D31 /* ProgramTableViewCell.swift in Sources */,
+				256DD3D11E93A82300DC5D31 /* ProjectTableViewCell.swift in Sources */,
 				96594F231EBAC8580058D354 /* EventsTableViewCell.swift in Sources */,
 				96F9B98F1EC3D65D0030FB7B /* FirstPageTableViewCell.swift in Sources */,
 				96594F1B1EB8263B0058D354 /* CustomTabBarController.swift in Sources */,
 				256DD3D91E93AD1800DC5D31 /* CustomCollectionViewCell.swift in Sources */,
-				96C690C71EDFB64F00063304 /* ProgramWebViewCell.swift in Sources */,
+				96C690C71EDFB64F00063304 /* ProjectWebViewCell.swift in Sources */,
 				96CDBABF1ED684EB00A571DA /* BlogTableViewCell.swift in Sources */,
-				256DD3D31E93A84100DC5D31 /* ProgramTableViewController.swift in Sources */,
+				256DD3D31E93A84100DC5D31 /* ProjectTableViewController.swift in Sources */,
 				A56203D41E933FEA00122BDB /* AppDelegate.swift in Sources */,
 				963193E71EC40326002F954E /* FirstPageTableViewController.swift in Sources */,
 				963193E91EC40436002F954E /* FirstPageViewController.swift in Sources */,

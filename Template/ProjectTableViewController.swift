@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ProgramTableViewController: UITableViewController {
+class ProjectTableViewController: UITableViewController {
     
-    var fileNames: [String] = ["Programs Chabot", "DOW", "food.imageAsset","food.imageAsset","food.imageAsset"]
-    var addressText: [String] = ["Pilot S.T.E.A.M. Program", "Feeding the Hungry", "Chabot Space & Science Center", "DOW Assisting the Homeless","Mental Health Services"]
+    var imageFileNames: [String] = ["Project-STEAM", "Theresa Taliaferro", "ProjectChabot","DOW","MM&SC"]
+    var addressText: [String] = ["Pilot S.T.E.A.M. Program", "Feeding the Hungry", "Chabot Space & Science Center", "DOW","Mental Health Services"]
     
     
     // I need a database to pull my images and videos
@@ -39,7 +39,7 @@ class ProgramTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return fileNames.count + 1
+        return imageFileNames.count + 1
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -71,24 +71,24 @@ class ProgramTableViewController: UITableViewController {
     //Breakpoint makes the program stop to see what state the code is in. Debug and take the drag the break points off the screen
     
         if indexPath.row == 5 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ProgramWebViewCell", for: indexPath) as! ProgramWebViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProjectWebViewCell", for: indexPath) as! ProjectWebViewCell
             cell.loadurl(url: "https://www.youtube.com/watch?v=2IVQGL-kbrA")
             return cell
         }
     
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProgramTableViewCell", for: indexPath) as! ProgramTableViewCell
-        cell.photoImageView.image = UIImage(named: fileNames[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier:"ProjectTableViewCell", for: indexPath) as! ProjectTableViewCell
+        cell.photoImageView.image = UIImage(named: imageFileNames[indexPath.row])
         cell.photoImageView.contentMode = .scaleAspectFill
         cell.addressLabel.text = addressText[indexPath.row]
         //This override creates all the cells, each cell has an imagename and identifier.
         
-        //The identifier is given to ProgramTableViewCell.
+        //The identifier is given to ProjectTableViewCell.
 
         // Configure the cell...tell the commputer what to put in each cell; indexpath has two numbers, first column has 0 row 0, and second column 1 row 0.   
         
-//        print(indexPath) //[0, 0]
-//        let file = fileNames[indexPath[1]]
-//        cell.imageView = UIImageView(image: UIImage(contentsOfFile: fileNames[indexPath[1]]))
+        print(indexPath)
+//        let file = imageFileNames[indexPath[1]]
+//        cell.imageView = UIImageView(image: UIImage(contentsOfFile: imageFileNames[indexPath[1]]))
 
         return cell
     }
