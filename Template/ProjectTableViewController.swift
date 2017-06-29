@@ -10,11 +10,12 @@ import UIKit
 
 class ProjectTableViewController: UITableViewController {
     
-    var imageFileNames: [String] = ["Project-STEAM", "Theresa Taliaferro", "ProjectChabot","DOW","MM&SC"]
-    var addressText: [String] = ["Pilot S.T.E.A.M. Program", "Feeding the Hungry", "Chabot Space & Science Center", "DOW","Mental Health Services"]
+    var imageFileNames: [String] = ["Project-STEAM","Feeding the Homeless", "ProjectChabot","DOW","MM&SC","Childwriting"]
+    var addressText: [String] = ["Pilot S.T.E.A.M. Program","Feeding the Hungry", "Chabot Space and Science Center","DOW-Dignity on Wheels","Mental Health Services","Financial Literacy"]
     
     
-    // I need a database to pull my images and videos
+    // I need a database to pull my images and videos; when I size the pictures 330 x 200 with 72 pixels and save a png, they seem to fit perfectly overwise the become distorted or will not show up at all --Rebecca.
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -70,7 +71,7 @@ class ProjectTableViewController: UITableViewController {
         
     //Breakpoint makes the program stop to see what state the code is in. Debug and take the drag the break points off the screen
     
-        if indexPath.row == 5 {
+        if indexPath.row == 6 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProjectWebViewCell", for: indexPath) as! ProjectWebViewCell
             cell.loadurl(url: "https://www.youtube.com/watch?v=2IVQGL-kbrA")
             return cell

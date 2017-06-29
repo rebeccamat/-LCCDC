@@ -21,10 +21,8 @@ class FirstPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     @IBAction func programButtonTouched(_ sender: Any) {
         tabBarController?.selectedIndex = 3
-        
     }
     
     @IBAction func eventButtonTouched(_ sender: Any) {

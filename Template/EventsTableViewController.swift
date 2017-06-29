@@ -73,11 +73,11 @@ class EventsTableViewController: UITableViewController {
             cell.eventImage.image = UIImage(named: "B2B")
         }
         if(indexPath.row==4){
-        cell.titleLabel.text = "Thanksgiving Food Give-A-Way"
-        cell.whereLabel.text = "Love Center Church"
-        cell.whenLabel.text = "Saturday, November 20, 2017 "
-        cell.timeLabel.text = "11:00 to 3:00 PM "
-        cell.eventImage.image = UIImage(named: "Theresa Taliaferro")
+            cell.titleLabel.text = "Thanksgiving Food Give-A-Way"
+            cell.whereLabel.text = "Love Center Church"
+            cell.whenLabel.text = "Saturday, November 20, 2017 "
+            cell.timeLabel.text = "11:00 to 3:00 PM "
+            cell.eventImage.image = UIImage(named: "Theresa Taliaferro")
         }
 
         if(indexPath.row==5){
@@ -85,7 +85,7 @@ class EventsTableViewController: UITableViewController {
         cell.whereLabel.text = "Love Center Church"
         cell.whenLabel.text = "Saturday, December 21, 2017 "
         cell.timeLabel.text = "11:00 to 5:00 PM "
-    
+        cell.eventImage.image = UIImage(named: "Toys4Tots")
         }
 
         // Configure the cell...

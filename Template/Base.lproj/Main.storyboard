@@ -109,7 +109,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" badgeValue="First Page" selectedImage="navIcon-firstpage" id="FTs-7G-J6t"/>
+                    <tabBarItem key="tabBarItem" badgeValue="First Page" selectedImage="First Page" id="FTs-7G-J6t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMt-Pw-fri" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,12 +119,12 @@
         <scene sceneID="IOa-zF-oC5">
             <objects>
                 <tabBarController id="7UH-iD-HM5" customClass="CustomTabBarController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" backgroundImage="navIcon-firstpage" itemPositioning="centered" id="7Oe-Gi-tSB">
+                    <tabBar key="tabBar" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" backgroundImage="navIcon-firstpage" itemPositioning="centered" id="7Oe-Gi-tSB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.25219724491405549" green="0.13291510004224549" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="selectedImageTintColor" red="0.97989697252513797" green="0.6093906299751064" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.82409133348626173" blue="0.96270113255315992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Npf-mP-bFF" kind="relationship" relationship="viewControllers" id="6ix-Dm-EEK"/>
@@ -243,7 +243,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" tag="-1" title="EVENTS" image="Events" badgeValue="Come" selectedImage="Events" id="9Jw-bB-5wc" propertyAccessControl="none">
-                        <inset key="imageInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                        <inset key="imageInsets" minX="2" minY="0.0" maxX="2" maxY="2"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="-10" vertical="0.0"/>
                     </tabBarItem>
                 </tableViewController>
@@ -259,6 +259,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="N5W-a0-r4E">
+                            <rect key="frame" x="0.0" y="319" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlogCell" rowHeight="291" id="yFc-fA-IXA" userLabel="BlogCell" customClass="BlogTableViewCell" customModule="Template" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="291"/>
@@ -414,9 +418,8 @@
                             <outlet property="delegate" destination="ZtS-63-YAt" id="T7J-dN-Ex2"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" tag="1" title="PROJECTS" badgeValue="We Do" id="5Qg-T5-kaM">
+                    <tabBarItem key="tabBarItem" tag="1" title="PROJECTS" badgeValue="OUR" id="5Qg-T5-kaM">
                         <inset key="imageInsets" minX="1" minY="1" maxX="1" maxY="1"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="-10" vertical="0.0"/>
                     </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZJ-t8-hE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -435,27 +438,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7LR-R3-ovh">
-                                <rect key="frame" x="6" y="96" width="369" height="158"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone background2" translatesAutoresizingMaskIntoConstraints="NO" id="Kph-uV-CSY">
+                                <rect key="frame" x="0.0" y="300" width="381" height="328"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone background1" translatesAutoresizingMaskIntoConstraints="NO" id="VvY-0N-5eW">
+                                <rect key="frame" x="0.0" y="18" width="375" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" playsSound="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7LR-R3-ovh">
+                                <rect key="frame" x="3" y="307" width="369" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Our Donors support us in many ways: 
 • Share the Spirit
 • Safeway
 • Love Center Church Members
 • Community
 • City of Refuge 
-• Yvette Flunder Foundation</string>
+• Yvette Flunder Foundation
+• Professor Richard Bains</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OUR DONORS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vk7-sB-H3j">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONTACT INFO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vk7-sB-H3j">
                                 <rect key="frame" x="0.0" y="18" width="375" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.1185150594" blue="0.89671361449999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.53744852539999999" green="0.99946320060000005" blue="0.56913095709999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.630530708" green="1" blue="0.1404209716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OUR DONORS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsV-VH-fEO">
+                                <rect key="frame" x="0.0" y="262" width="375" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.1185150594" blue="0.89671361449999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.53744852539999999" green="0.99946320060000005" blue="0.56913095709999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.630530708" green="1" blue="0.1404209716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oY0-hX-OuW">
+                                <rect key="frame" x="16" y="66" width="318" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Love Center Community Development Center
+10400 International Blvd.
+Oakland, CA 94603
+510.214.2904</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -528,11 +561,13 @@
     <resources>
         <image name="Events" width="20" height="18"/>
         <image name="Facebook logo" width="191" height="243"/>
+        <image name="First Page" width="31" height="34"/>
         <image name="LCCDC Logo copy" width="1200" height="833"/>
         <image name="LCCDC Logo sm" width="150" height="150"/>
         <image name="MapIcon" width="25" height="25"/>
         <image name="MyLocationIcon" width="60" height="60"/>
         <image name="STREETCODE Class" width="4032" height="3024"/>
+        <image name="iphone background1" width="1072" height="596"/>
         <image name="iphone background2" width="596" height="1072"/>
         <image name="navIcon-firstpage" width="20" height="20"/>
     </resources>

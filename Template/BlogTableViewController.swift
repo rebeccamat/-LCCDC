@@ -46,7 +46,7 @@ class BlogTableViewController: UITableViewController {
             cell.titleLabel.text="Streetcode Class"
         }
         if indexPath.row == 1 {
-            cell.titleImage.image=UIImage(named:"Theresa 2")
+            cell.titleImage.image=UIImage(named:"FruitVeggies")
             cell.titleLabel.text="We Feed the Hungry"
             
         }
@@ -70,7 +70,11 @@ class BlogTableViewController: UITableViewController {
             cell.titleImage.image=UIImage(named:"Fundraising")
             cell.titleLabel.text="Fundraising"
         }
-    
+        if indexPath.row == 6 {
+            cell.titleImage.image=UIImage(named:"Childwriting")
+            cell.titleLabel.text="Financial Literacy Class"
+        }
+        
         // Configure the cell...
         
 

@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "food.jpg",
+      "filename" : "Feeding the Homeless.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "food-2.jpg",
+      "filename" : "Feeding the Homeless-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "food-1.jpg",
+      "filename" : "Feeding the Homeless-2.png",
       "scale" : "3x"
     }
   ],
