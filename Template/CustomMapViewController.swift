@@ -32,6 +32,22 @@ class CustomMapViewController: UIViewController, CLLocationManagerDelegate, MKMa
         self.centerMapOnLocation(initialLocation)
         
         self.checkLocationAuthorizationStatus()
+        
+        let location = "10400 International Blvd. Oakland, CA"
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(location, completionHandler: { (placemarks: [CLPlacemark]?, error: Error?) in
+            if (placemarks?.count)! > 0 {
+                let topResult = placemarks![0];
+                let placemark = MKPlacemark(placemark: topResult)
+                
+                var region = self.mapView.region
+                region.center = (placemark.location?.coordinate)!
+                region.span.longitudeDelta /= 8.0
+                region.span.latitudeDelta /= 8.0
+                self.mapView.setRegion(region, animated: true)
+                self.mapView.addAnnotation(placemark)
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,6 +64,9 @@ class CustomMapViewController: UIViewController, CLLocationManagerDelegate, MKMa
         }
     }
     
+    @IBAction func onBackButtonTapped(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     // MARK: - Location Helper Functions
     
@@ -77,9 +96,9 @@ class CustomMapViewController: UIViewController, CLLocationManagerDelegate, MKMa
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            self.currentLocation = location
+            //self.currentLocation = location
             
-            self.centerMapOnLocation(self.currentLocation!)
+            //self.centerMapOnLocation(self.currentLocation!)
             
             print("Current location: \(location)")
             

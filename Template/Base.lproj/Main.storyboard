@@ -163,24 +163,14 @@
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="4" height="-1"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdH-Ez-8Qm">
-                                            <rect key="frame" x="200" y="79" width="175" height="34"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="21"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <nil key="textColor"/>
-                                            </variation>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wI-xE-Ehq">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wI-xE-Ehq">
                                             <rect key="frame" x="200" y="137" width="175" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqO-Fq-w2k" userLabel="When">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqO-Fq-w2k" userLabel="When">
                                             <rect key="frame" x="200" y="208" width="175" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -201,6 +191,14 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="0.83557343839999998" blue="0.28623983850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal" title="Time"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Er3-SF-WGQ" userLabel="Where Button">
+                                            <rect key="frame" x="194" y="80" width="173" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="For Directions"/>
+                                            <connections>
+                                                <segue destination="p6q-Ib-Feb" kind="presentation" id="xhh-vg-OfK"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YE-Rl-w7E">
                                             <rect key="frame" x="200" y="56" width="175" height="23"/>
@@ -225,14 +223,6 @@
                                             <rect key="frame" x="0.0" y="62" width="194" height="243"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Er3-SF-WGQ" userLabel="Where Button">
-                                            <rect key="frame" x="202" y="78" width="173" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button"/>
-                                            <connections>
-                                                <segue destination="bup-px-mTG" kind="presentation" id="xhh-vg-OfK"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -241,7 +231,6 @@
                                     <outlet property="timeLabel" destination="6wI-xE-Ehq" id="iXF-hS-8Yh"/>
                                     <outlet property="titleLabel" destination="my5-kB-2eh" id="6Nh-So-pEh"/>
                                     <outlet property="whenLabel" destination="EqO-Fq-w2k" id="j3i-Vl-TvG"/>
-                                    <outlet property="whereLabel" destination="PdH-Ez-8Qm" id="O2Q-Em-Mse"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -507,7 +496,7 @@ Oakland, CA 94603
             </objects>
             <point key="canvasLocation" x="2015.2" y="460.11994002998506"/>
         </scene>
-        <!--Map View-->
+        <!--Custom Map View Controller-->
         <scene sceneID="zyU-p4-qck">
             <objects>
                 <viewController id="bup-px-mTG" customClass="CustomMapViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
@@ -519,33 +508,42 @@ Oakland, CA 94603
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hjO-hP-0aZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJE-CZ-OVQ">
-                                <rect key="frame" x="262" y="533" width="97" height="60"/>
+                                <rect key="frame" x="250" y="528" width="59" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="MyLocationIcon">
-                                    <string key="title">click</string>
+                                <state key="normal" image="navIcon-firstpage">
+                                    <string key="title">click
+</string>
                                 </state>
                                 <connections>
                                     <action selector="onCurrentLocationButtonTapped:" destination="bup-px-mTG" eventType="touchUpInside" id="Nr6-s7-Nas"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4o-0G-zEM" userLabel="BackButton">
-                                <rect key="frame" x="45" y="20" width="68" height="39"/>
+                                <rect key="frame" x="44" y="20" width="98" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleShadowColor" red="0.25219724490000001" green="0.13291510000000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="RtQ-Fe-N0A" kind="show" id="WrC-Yr-zuM"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hjO-hP-0aZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map View" image="MapIcon" id="4Fg-dR-myy"/>
+                    <navigationItem key="navigationItem" id="4MH-Lx-yQJ">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Back " id="3LJ-dD-7OL">
+                            <connections>
+                                <action selector="onBackButtonTapped:" destination="bup-px-mTG" id="yn0-Nb-3Vi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="currentLocationButton" destination="MJE-CZ-OVQ" id="DIm-rj-NK8"/>
                         <outlet property="mapView" destination="hjO-hP-0aZ" id="zaT-sx-T8X"/>
@@ -553,7 +551,7 @@ Oakland, CA 94603
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B58-Ds-mEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="1384.8575712143929"/>
+            <point key="canvasLocation" x="1415.2" y="1384.8575712143929"/>
         </scene>
         <!--BLOG-->
         <scene sceneID="zEN-tT-lYG">
@@ -576,6 +574,25 @@ Oakland, CA 94603
             </objects>
             <point key="canvasLocation" x="-1956" y="580.65967016491754"/>
         </scene>
+        <!--Map View-->
+        <scene sceneID="2z2-Xt-cj2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p6q-Ib-Feb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map View" image="mapIcon" id="4Fg-dR-myy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bix-LW-W5f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bup-px-mTG" kind="relationship" relationship="rootViewController" id="DrF-nn-GOq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pho-bK-fyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="1384.8575712143929"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Events" width="20" height="18"/>
@@ -583,11 +600,10 @@ Oakland, CA 94603
         <image name="First Page" width="31" height="34"/>
         <image name="LCCDC Logo copy" width="1200" height="833"/>
         <image name="LCCDC Logo sm" width="150" height="150"/>
-        <image name="MapIcon" width="25" height="25"/>
-        <image name="MyLocationIcon" width="60" height="60"/>
         <image name="STREETCODE Class" width="4032" height="3024"/>
         <image name="iphone background1" width="1072" height="596"/>
         <image name="iphone background2" width="596" height="1072"/>
+        <image name="mapIcon" width="50" height="50"/>
         <image name="navIcon-firstpage" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>

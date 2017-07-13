@@ -18,7 +18,7 @@
 		963193E71EC40326002F954E /* FirstPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963193E61EC40326002F954E /* FirstPageTableViewController.swift */; };
 		963193E91EC40436002F954E /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963193E81EC40436002F954E /* FirstPageViewController.swift */; };
 		963193F21ECE3E17002F954E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963193F11ECE3E17002F954E /* LaunchScreen.storyboard */; };
-		963193F41ECE4131002F954E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963193F31ECE4131002F954E /* Assets.xcassets */; };
+		963193F41ECE4131002F954E /* m.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963193F31ECE4131002F954E /* m.xcassets */; };
 		96594F1B1EB8263B0058D354 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F1A1EB8263B0058D354 /* CustomTabBarController.swift */; };
 		96594F1F1EBAC10E0058D354 /* BlogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F1E1EBAC10E0058D354 /* BlogTableViewController.swift */; };
 		96594F231EBAC8580058D354 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96594F221EBAC8580058D354 /* EventsTableViewCell.swift */; };
@@ -47,7 +47,7 @@
 		963193E61EC40326002F954E /* FirstPageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageTableViewController.swift; sourceTree = "<group>"; };
 		963193E81EC40436002F954E /* FirstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
 		963193F11ECE3E17002F954E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		963193F31ECE4131002F954E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		963193F31ECE4131002F954E /* m.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = m.xcassets; sourceTree = "<group>"; };
 		96594F1A1EB8263B0058D354 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		96594F1E1EBAC10E0058D354 /* BlogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogTableViewController.swift; sourceTree = "<group>"; };
 		96594F221EBAC8580058D354 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 				96594F1A1EB8263B0058D354 /* CustomTabBarController.swift */,
 				A56203D31E933FEA00122BDB /* AppDelegate.swift */,
 				A56203D71E933FEA00122BDB /* Main.storyboard */,
-				963193F31ECE4131002F954E /* Assets.xcassets */,
+				963193F31ECE4131002F954E /* m.xcassets */,
 				963193E81EC40436002F954E /* FirstPageViewController.swift */,
 				96F9B98E1EC3D65D0030FB7B /* FirstPageTableViewCell.swift */,
 				963193E61EC40326002F954E /* FirstPageTableViewController.swift */,
@@ -209,7 +209,7 @@
 			files = (
 				963193F21ECE3E17002F954E /* LaunchScreen.storyboard in Resources */,
 				96161BF61ED3E12500C5A9D7 /* GoogleService-Info.plist in Resources */,
-				963193F41ECE4131002F954E /* Assets.xcassets in Resources */,
+				963193F41ECE4131002F954E /* m.xcassets in Resources */,
 				A56203D91E933FEA00122BDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

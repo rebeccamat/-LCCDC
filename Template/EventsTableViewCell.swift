@@ -13,7 +13,7 @@ import EventKit
 class EventsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var whereLabel: UILabel!
+    //@IBOutlet weak var whereLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var whenLabel: UILabel!
     @IBOutlet weak var addToCalendarButton: UIButton!
